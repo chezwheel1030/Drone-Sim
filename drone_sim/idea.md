@@ -1,6 +1,7 @@
 # Idea
 
-## Center 
+## Center
+
 dataclass
 
 struct drone
@@ -9,13 +10,3 @@ struct drone
     x pos: float
     y pos: float
     z pos: float
-
-
-
-
-
-
-
-
-
-

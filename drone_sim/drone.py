@@ -8,12 +8,12 @@ class drone:
     x: float
     y: float
     z: float
+    
+    thrust: float #TODO Unit
+    
 
 
-topLeftProp = drone("top leftpropeller", 0.5, -10.0, 20.0, 30.0)
-topRightProp = drone("top right propeller", 0.5, 10.0, 20.0, 30.0)
-bottomLeftProp = drone("bottom left propeller", 0.5, -10.0, -20.0, 30.0)
-bottomRightProp = drone("bottom right propeller", 0.5, 10.0, -20.0, 30.0)
+
 
 center_topLeftProp = (topLeftProp.x * topLeftProp.part_weight,
                topLeftProp.y * topLeftProp.part_weight,

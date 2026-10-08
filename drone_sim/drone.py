@@ -12,9 +12,6 @@ class drone:
     thrust: float #TODO Unit
     
 
-
-
-
 center_topLeftProp = (topLeftProp.x * topLeftProp.part_weight,
                topLeftProp.y * topLeftProp.part_weight,
                 topLeftProp.z * topLeftProp.part_weight)

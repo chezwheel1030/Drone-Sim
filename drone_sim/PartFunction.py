@@ -20,12 +20,15 @@ class centerGrav:
     
 class OffSet: 
     
+    offsets = []
+
     for prop in PartList.propParts:
-        offSet_x = prop.x - centerGrav.center_x
-        offSet_y = prop.y - centerGrav.center_y
-        offSet_z = prop.z - centerGrav.center_z
-        print(offSet_x, offSet_y,offSet_z)       
-        
+        offset_x = prop.x - centerGrav.center_x
+        offset_y = prop.y - centerGrav.center_y
+        offset_z = prop.z - centerGrav.center_z
+
+        offsets.append((offset_x, offset_y, offset_z))
+
         
     
         

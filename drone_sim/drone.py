@@ -9,7 +9,7 @@ class DroneProp:
     y: float
     z: float
     
-    thrust: float #TODO Unit
+    thrust: float #ENwtons
     
 @dataclass
 class Drone:

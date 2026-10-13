@@ -6,4 +6,6 @@ class PartList:
     bottomLeftProp = DroneProp("bottom left propeller", 0.5, -10.0, -20.0, 30.0, 10.0)
     bottomRightProp = DroneProp("bottom right propeller", 0.5, 10.0, -20.0, 30.0, 10.0)
     
+    #base parts
     parts = [topLeftProp, topRightProp, bottomLeftProp, bottomRightProp]
+    propParts = [topLeftProp, topRightProp, bottomLeftProp, bottomRightProp]

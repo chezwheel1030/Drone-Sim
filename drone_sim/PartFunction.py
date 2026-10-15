@@ -5,7 +5,7 @@ total_y = 0
 total_z = 0
 total_weight = 0
  
-class centerGrav:
+class CenterGrav:
     for part in PartList.parts:
         total_x += part.x * part.weight 
         total_y += part.y * part.weight
@@ -16,16 +16,16 @@ class centerGrav:
     center_y = total_y / total_weight
     center_z = total_z / total_weight
     centerGrav = [center_x, center_y, center_z]
-    print(centerGrav) 
+    #print(centerGrav) 
     
 class OffSet: 
     
     offsets = []
 
     for prop in PartList.propParts:
-        offset_x = prop.x - centerGrav.center_x
-        offset_y = prop.y - centerGrav.center_y
-        offset_z = prop.z - centerGrav.center_z
+        offset_y = prop.y - CenterGrav.center_y
+        offset_x = prop.x - CenterGrav.center_x
+        offset_z = prop.z - CenterGrav.center_z
 
         offsets.append((offset_x, offset_y, offset_z))
 

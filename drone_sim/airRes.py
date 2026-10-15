@@ -7,7 +7,7 @@ class AirRes:
     cd = 0 # Drag Coeffcient
     a = 0 # Refrence Area
     
-    dragforce = .5 * p * v**2 * cd * a
+    dragForce = .5 * p * v**2 * cd * a
 
 class Torque:
     torque_x = 0
@@ -21,4 +21,4 @@ class Torque:
         torque_y -= offset_x * prop.thrust
 
     torque_total = [torque_x, torque_y, torque_z]
-    print(torque_total)
+    #print(torque_total)
